@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+   "background": {
+   	"scripts": ["background.js"],
+   	"persistent": false
+   },
+   "options_page": "options.html",
+   "content_scripts": [ {
+      "js": ["fullscreen.js"],
+      "css": ["fullscreen.css"],
+      "matches": [
+      	"<all_urls>"
+      ],
+      "run_at": "document_end"
+   } ],
+   "icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+   "name": "Fullscreen Element",
+   "description": "Adds ability to make any element fullscreen!",
+   "version": "1.0.0"
+}
