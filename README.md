@@ -2,7 +2,19 @@
 
 This chrome extension allows you to make any HTML element fullscreen.
 
-[Get it on chrome web store]()
+Coming soon to chrome web store...
+
+## Instructions ##
+### Installing ###
+Download the [.crx package](https://github.com/camupod/fullscreen-element/blob/master/fullscreen-element.crx?raw=true) and open it with Chrome. This will install the extension. It will ask your permission to access stuff on all sites... don't worry, it's required. You can look at the code if you don't trust me!
+
+### Using ###
+After installing, you'll need to refresh any open pages before it will work. To select an element to make fullscreen, press CTRL+SHIFT+E. Now when you mouse over elements, they will have a red border applied. Press ESC to cancel selecting. If you click the element, it will bring that element into fullscreen. Press ESC to get out.
+
+## TODO ##
+ * Fix bugs with border not showing up
+ * Options page for custom styles
+
 
 ## License ##
 
