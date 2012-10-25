@@ -19,6 +19,6 @@
 		"128": "icon128.png"
 	},
    "name": "Fullscreen Element",
-   "description": "Adds ability to make any element fullscreen!",
-   "version": "1.0.0"
+   "description": "Make any HTML element fullscreen!",
+   "version": "1.0.2"
 }

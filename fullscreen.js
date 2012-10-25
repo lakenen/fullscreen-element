@@ -42,14 +42,16 @@
 			stopPicking();
 			elt = ev.target;
 			elt.classList.remove('__fullscreen-element-selected');
-
+			var cssText = elt.style.cssText;
 			elt.addEventListener('webkitfullscreenchange', function(e) {
-				if (document.webkitIsFullScreen) {
-					elt.style.cssText = '';
-					elt.style.float = 'none';
-				} else {
-					elt.style.cssText = '';
-				}
+				setTimeout(function () {
+					if (document.webkitIsFullScreen) {
+						elt.style.cssText = '';
+						elt.style.float = 'none';
+					} else {
+						elt.style.cssText = cssText;
+					}
+				}, 50);
 			}, true);
 			elt.webkitRequestFullScreen();
 			ev.preventDefault();
